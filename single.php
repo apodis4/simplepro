@@ -9,7 +9,9 @@
       <h1><?php the_title(); ?></h1>
       <p><?php the_time('j M , Y') ?></p>
 
-      <?php the_post_thumbnail('large', array('class' => 'img-res mb-2','alt' => get_the_title())); ?>
+      <div class="post-img">
+        <?php the_post_thumbnail('large', array('class' => 'img-res mb-2','alt' => get_the_title())); ?>
+      </div>
 
       <?php the_content(esc_html__('Read More...', 'slug-theme'));?>
     </article>

@@ -18,7 +18,11 @@
             large: w=1024 px
           -->
 
-          <?php the_post_thumbnail('large', array('class' => 'img-res','alt' => get_the_title())); ?>
+          <div class="post-img">
+              <?php the_post_thumbnail('large', array('class' => 'img-res','alt' => get_the_title())); ?>
+          </div>
+
+
 
           <h3><?php the_title(); ?></h3>
 

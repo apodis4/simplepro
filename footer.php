@@ -1,5 +1,5 @@
 <footer class="footer">
-  footer
+  Copyright - <?php bloginfo('title'); ?> - <a href="/privacy-policy"> Privacy policy</a>
 </footer>
 
 <!-- javascript files -->

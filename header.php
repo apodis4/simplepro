@@ -11,27 +11,27 @@
 </head>
 <body <?php body_class(); ?>> <!-- inserisce classi dinamicamente in base alla pagina -->
 
-  <header class="header">
-
-    <a href="<?php echo home_url(); ?>" class="logo"><?php bloginfo('title'); ?></a>
-
-    <nav class="menu">
-
-      <!-- template menu -->
-      <?php
-      wp_nav_menu(array(
-        'theme_location' => 'header',
-        //'walker' => new Clean_Walker_Nav(),
-        'container' => false,
-        'items_wrap' => '<ul>%3$s</ul>'
-      ));
-      ?>
-
-    </nav>
-
-  </header>
-
   <div class="hero" style="background: url(<?php echo header_image(); ?>) no-repeat center center; background-size: cover;">
+
+    <header class="header">
+
+      <a href="<?php echo home_url(); ?>" class="logo"><?php bloginfo('title'); ?></a>
+
+      <nav class="menu">
+
+        <!-- template menu -->
+        <?php
+        wp_nav_menu(array(
+          'theme_location' => 'header',
+          //'walker' => new Clean_Walker_Nav(),
+          'container' => false,
+          'items_wrap' => '<ul>%3$s</ul>'
+        ));
+        ?>
+
+      </nav>
+
+    </header>
 
     <?php if(is_home()){ ?>
         <h1><?php bloginfo('name'); ?><!-- template tag di wordpress --></h1>
