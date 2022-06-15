@@ -10,19 +10,16 @@
 
       <article class="article">
 
-        <a href="<?php the_permalink(); ?>">
+        <a href="<?php the_permalink(); ?>"> <!-- link all'articolo singolo -->
 
           <!--
             thumbnail: w=150 px
             medium: w=300 px
             large: w=1024 px
           -->
-
           <div class="post-img">
               <?php the_post_thumbnail('large', array('class' => 'img-res','alt' => get_the_title())); ?>
           </div>
-
-
 
           <h3><?php the_title(); ?></h3>
 

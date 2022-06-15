@@ -7,8 +7,8 @@
     <!-- loop content -->
     <article class="article">
       
+      <?php the_content(esc_html__('Read More...', 'slug-theme'));?> <!-- mostra il contenuto dell'articolo -->
 
-      <?php the_content(esc_html__('Read More...', 'slug-theme'));?>
     </article>
 
   <?php endwhile; ?>

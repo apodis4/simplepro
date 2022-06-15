@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- style files -->
-  <?php wp_head(); ?>
+  <!-- style files: punto dove wp inserisce tutti i files di stile -->
+  <?php wp_head(); ?> 
 
 </head>
 <body <?php body_class(); ?>> <!-- inserisce classi dinamicamente in base alla pagina -->
@@ -23,7 +23,6 @@
         <?php
         wp_nav_menu(array(
           'theme_location' => 'header',
-          //'walker' => new Clean_Walker_Nav(),
           'container' => false,
           'items_wrap' => '<ul>%3$s</ul>'
         ));
