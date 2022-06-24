@@ -13,12 +13,12 @@
         <a href="<?php the_permalink(); ?>">
 
           <!--
-            thumbnail: w=150 px
-            medium: w=300 px
-            large: w=1024 px
+            thumbnail: w=150px, h=150px
+            medium: w=300px
+            large: w=1024px
           -->
 
-          <?php the_post_thumbnail('large', array('class' => 'img-res','alt' => get_the_title())); ?>
+          <?php the_post_thumbnail('large', array('class' => 'img-res','alt' => get_the_title())); ?> <!-- immagine in evidenza -->
 
           <h3><?php the_title(); ?></h3>
 

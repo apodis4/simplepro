@@ -42,16 +42,15 @@ h6 { font-size: 15px; line-height: 1.3; font-weight: 800; }
 .mb-1 {margin-bottom: 20px; }
 .mb-2 {margin-bottom: 40px; }
 
+a { text-decoration: none; color: #f75e47 }
+p {line-height: 1.3; }
+
 @media (max-width: 768px) {
   /* smartphone */
   h1 { font-size: 40px; }
   h2 { font-size: 30px; }
   h3 { font-size: 25px; }
 }
-
-a { text-decoration: none; color: #f75e47 }
-p {line-height: 1.3; }
-
 
 /* ! Layout
 -----------------------------------------------------------------------------*/
@@ -62,7 +61,7 @@ p {line-height: 1.3; }
 .article { border: 1px solid blue; margin: 10px; padding: 10px; }
 
 .container { max-width: 800px; margin: 0 auto; }
-.page .container { max-width: 1200px; }
+.page .container { max-width: 1200px; } /* allarga il container solo nelle pagine */
 
 
 /* ! Header
@@ -80,13 +79,12 @@ p {line-height: 1.3; }
   .menu ul { overflow-x: auto; white-space: nowrap; }
 }
 
-
 /* ! Hero
 -----------------------------------------------------------------------------*/
 .hero { border: 1px solid red; padding: 20px; margin: 10px; text-align: center; }
 .hero h1 { padding: 100px 10px; }
 
-.single .hero { display: none; }
+.single .hero { display: none; } /* nasconde la hero nella single page */
 
 
 

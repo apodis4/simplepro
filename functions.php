@@ -5,7 +5,7 @@ function simple_setup() {
   add_theme_support( "title-tag" ); // setta dinamicamente il title in ogni pagina
 
   // Enable custom header in header
-  add_theme_support( "custom-header" ); 
+  add_theme_support( "custom-header" ); // abilita le custom header
 
   // Enable featured image
   add_theme_support( 'post-thumbnails' );

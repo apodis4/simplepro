@@ -13,10 +13,10 @@
 
   <header class="header">
 
+    <!-- logo (nome del sito) -->
     <a href="<?php echo home_url(); ?>" class="logo"><?php bloginfo('title'); ?></a>
 
     <nav class="menu">
-
       <!-- template menu -->
       <?php
       wp_nav_menu(array(
@@ -26,22 +26,18 @@
         'items_wrap' => '<ul>%3$s</ul>'
       ));
       ?>
-
     </nav>
 
   </header>
 
-  <div class="hero" style="background: url(<?php echo header_image(); ?>) no-repeat center center; background-size: cover;">
-
-    <?php if(is_home()){ ?>
+  <div class="hero" style="background: url(<?php echo header_image(); ?>) no-repeat center center; background-size: cover;"> <!-- caricamento immagine di header -->
+    <!-- Conditional tag Wordpress -->
+    <?php if(is_home()){ ?> <!-- eseguito se siamo in home -->
         <h1><?php bloginfo('name'); ?><!-- template tag di wordpress --></h1>
     <?php  } ?>
 
-    <?php if(is_page()){ ?>
+    <?php if(is_page()){ ?> <!-- eseguito se siamo in una pagina -->
       <h1><?php the_title(); ?></h1>
     <?php  } ?>
-
-
-
 
   </div>
