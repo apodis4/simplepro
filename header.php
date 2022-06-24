@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- style files -->
-  <?php wp_head(); ?>
+  <!-- style files: punto dove wp inserisce tutti i files di stile -->
+  <?php wp_head(); ?> 
 
 </head>
 <body <?php body_class(); ?>> <!-- inserisce classi dinamicamente in base alla pagina -->
 
-  <header class="header">
+  <div class="hero" style="background: url(<?php echo header_image(); ?>) no-repeat center center; background-size: cover;">
 
     <!-- logo (nome del sito) -->
     <a href="<?php echo home_url(); ?>" class="logo"><?php bloginfo('title'); ?></a>
@@ -28,7 +28,7 @@
       ?>
     </nav>
 
-  </header>
+      </nav>
 
   <div class="hero" style="background: url(<?php echo header_image(); ?>) no-repeat center center; background-size: cover;"> <!-- caricamento immagine di header -->
     <!-- Conditional tag Wordpress -->

@@ -10,7 +10,7 @@
 
       <article class="article">
 
-        <a href="<?php the_permalink(); ?>">
+        <a href="<?php the_permalink(); ?>"> <!-- link all'articolo singolo -->
 
           <!--
             thumbnail: w=150px, h=150px
