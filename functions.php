@@ -28,6 +28,7 @@ function simple_styles() {
 add_action( 'wp_enqueue_scripts', 'simple_styles' ); // funzione che inserisce gli script contenuti nella funzione
 
 
+// funzione che allarga a 1200px il container
 function gb_gutenberg_admin_styles() {
     echo '
         <style>

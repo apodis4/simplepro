@@ -12,6 +12,7 @@
 
         <a href="<?php the_permalink(); ?>"> <!-- link all'articolo singolo -->
 
+        <div class=post-img>
           <!--
             thumbnail: w=150px, h=150px
             medium: w=300px
@@ -19,6 +20,8 @@
           -->
 
           <?php the_post_thumbnail('large', array('class' => 'img-res','alt' => get_the_title())); ?> <!-- immagine in evidenza -->
+
+        </div>
 
           <h3><?php the_title(); ?></h3>
 
